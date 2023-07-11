@@ -79,7 +79,6 @@ class SetLesson {
 }
 
 function setNewTaskInObj(newLessonvalue) {
-  //const lastId = tasks[tasks.length - 1].id
   const lastId = String(Date.now())
   const newTaskObj = new SetLesson(lastId, false, newLessonvalue)
   newTaskObj.createAndPutElt()
@@ -89,7 +88,6 @@ function setNewTaskInObj(newLessonvalue) {
     completed: false,
     text: newTaskObj.textTask,
   })
-  console.log(tasks)
 }
 
 function submitEvent(event) {
